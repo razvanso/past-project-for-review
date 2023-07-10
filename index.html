@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FCC: Survey Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <main>
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+
+    <form id="survey-form">
+      <label id="name-label" for="name">Name:</label><br>
+      <input type="text" id="name" name="name" placeholder="Enter your Name"><br>
+
+      <label id="email-label" for="email">Email</label><br>
+      <input type="email" placeholder="Enter your Email" id="email" required
+        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" /><br>
+
+      <label id="number-label" for="number"> Age:</label><br>
+      <input type="number" placeholder="Enter your Age" id="number" min="18" max="123"><br>
+
+      <label id="dropdown-dropdown" for="dropdown">Which option best describes your current role?</label><br>
+      <select id="dropdown" name="dropdown">
+        <option value="student">Student</option>
+        <option value="job">Full-time job</option>
+        <option value="learner">Full-time learner</option>
+        <option value="hidden">Prefer not to say</option>
+      </select>
+      <br>
+
+      <label for="recommend">Would you recommend freeCodeCamp to a friend?</label>
+      <fieldset id="group1">
+        <input id="definitely" type="radio" value="definitely" name="group1">
+        <label for="definitely">Definitely</label><br>
+        <input id="maybe" type="radio" value="maybe" name="group1">
+        <label for="maybe">Maybe</label><br>
+        <input id="not-sure" type="radio" value="not-sure" name="group1">
+        <label for="not-sure">Not sure</label><br>
+      </fieldset>
+
+      <label for="recommend">What would you like to see improved? <span>(Check all that apply)</span></label>
+      <fieldset id="checkboxes-group">
+        <input id="front-end" type="checkbox" value="front-end" name="checkboxes-group">
+        <label for="front-end">Front-end Projects</label><br>
+        <input id="back-end" type="checkbox" value="back-end" name="checkboxes-group">
+        <label for="back-end">Back-end Projects</label><br>
+        <input id="data-viz" type="checkbox" value="data-viz" name="checkboxes-group">
+        <label for="data-viz">Data Visualization</label><br>
+        <input id="challenges" type="checkbox" value="challenges" name="checkboxes-group">
+        <label for="challenges">Challenges</label><br>
+        <input id="open-source" type="checkbox" value="open-source" name="checkboxes-group">
+        <label for="open-source">Open Source Community</label><br>
+        <input id="gitter" type="checkbox" value="gitter" name="checkboxes-group">
+        <label for="gitter">Gitter help rooms</label><br>
+        <input id="videos" type="checkbox" value="videos" name="checkboxes-group">
+        <label for="videos">Videos</label><br>
+        <input id="city-meetups" type="checkbox" value="city-meetups" name="checkboxes-group">
+        <label for="city-meetups">City Meetups</label><br>
+        <input id="wiki" type="checkbox" value="wiki" name="checkboxes-group">
+        <label for="wiki">Wiki</label><br>
+        <input id="forum" type="checkbox" value="forum" name="checkboxes-group">
+        <label for="forum">Forum</label><br>
+        <input id="additional-courses" type="checkbox" value="additional-courses" name="checkboxes-group">
+        <label for="additional-courses">Additional Courses</label><br>
+      </fieldset>
+
+      <textarea name="comments" form="comment" placeholder="Enter your comment here...."></textarea><br><br>
+      <input type="submit" value="Submit">
+    </form>
+  </main>
+
+</body>
+
+</html>
